@@ -1,0 +1,1 @@
+# gaminuma06.github.io
