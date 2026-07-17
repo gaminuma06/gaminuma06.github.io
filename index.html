@@ -67,6 +67,43 @@
             position: relative;
         }
 
+        .hero-flex {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        @media (min-width: 640px) {
+            .hero-flex {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 40px;
+            }
+        }
+
+        .hero-text {
+            flex-grow: 1;
+        }
+
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-amber);
+            object-fit: cover;
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.25);
+            display: block;
+            background-color: var(--card-bg);
+        }
+
         .profile-badge {
             display: inline-block;
             padding: 6px 16px;
@@ -316,9 +353,16 @@
     <div class="container">
         <!-- Hero / Presentación -->
         <section class="hero">
-            <span class="profile-badge">Ingeniería & Tecnología</span>
-            <h1>Adán Arias</h1>
-            <p class="tagline">Ingeniero Agrícola & Desarrollador de Software</p>
+            <div class="hero-flex">
+                <div class="hero-text">
+                    <span class="profile-badge">Ingeniería & Tecnología</span>
+                    <h1>Adán Arias</h1>
+                    <p class="tagline">Ingeniero Agrícola & Desarrollador de Software</p>
+                </div>
+                <div class="profile-container">
+                    <img src="adan_arias.jpg" class="profile-pic" alt="Adán Arias">
+                </div>
+            </div>
             <p class="intro">
                 Especializado en diseñar e implementar soluciones tecnológicas a la medida para el campo y el sector agropecuario. Mi enfoque une la ciencia de la ingeniería agrícola con el poder de los sistemas de información geográfica (GIS) y el desarrollo de software móvil offline para solucionar problemas de navegación, mapeo y gestión de recursos naturales directamente en el terreno.
             </p>
