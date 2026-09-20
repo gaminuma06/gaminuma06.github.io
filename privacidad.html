@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — ToolkitPalm</title>
+<meta name="description" content="Qué datos recoge ToolkitPalm, para qué y por cuánto tiempo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-color: #080D16;
+  --accent-green: #10B981;
+  --accent-amber: #F59E0B;
+  --text-primary: #FFFFFF;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --border-color: rgba(255, 255, 255, 0.06);
+  --surface: rgba(255, 255, 255, 0.025);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg-color);
+  color: var(--text-secondary);
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 300;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+.envoltura { max-width: 760px; margin: 0 auto; padding: 0 24px 96px; }
+header.barra {
+  border-bottom: 1px solid var(--border-color);
+  padding: 22px 0;
+  margin-bottom: 56px;
+}
+header.barra .envoltura { padding-bottom: 0; display: flex; align-items: center; gap: 14px; }
+header.barra a.volver {
+  color: var(--text-muted); text-decoration: none; font-size: 0.9rem;
+  transition: color .2s;
+}
+header.barra a.volver:hover { color: var(--accent-green); }
+h1 {
+  color: var(--text-primary); font-weight: 700; font-size: clamp(1.9rem, 5vw, 2.6rem);
+  line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 10px;
+}
+.meta {
+  color: var(--text-muted); font-size: 0.88rem; margin-bottom: 44px;
+  padding-bottom: 24px; border-bottom: 1px solid var(--border-color);
+}
+h2 {
+  color: var(--text-primary); font-weight: 600; font-size: 1.28rem;
+  margin: 46px 0 14px; letter-spacing: -0.01em;
+}
+p { margin-bottom: 16px; }
+ul { margin: 0 0 18px 20px; }
+li { margin-bottom: 9px; }
+strong { color: var(--text-primary); font-weight: 600; }
+a { color: var(--accent-green); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.destacado {
+  background: var(--surface); border-left: 2px solid var(--accent-amber);
+  padding: 18px 22px; border-radius: 0 8px 8px 0; margin: 24px 0;
+}
+.destacado p:last-child { margin-bottom: 0; }
+footer {
+  border-top: 1px solid var(--border-color); margin-top: 64px; padding-top: 28px;
+  color: var(--text-muted); font-size: 0.86rem;
+}
+</style>
+</head>
+<body>
+<header class="barra"><div class="envoltura">
+  <a class="volver" href="/">&larr; Adán Arias</a>
+</div></header>
+<main class="envoltura">
+<h1>Política de Privacidad</h1>
+<p class="meta">ToolkitPalm · Última actualización: 20 de septiembre de 2026<br>
+Responsable: Ing. Adán Arias · <a href="mailto:ingarias9006@gmail.com">ingarias9006@gmail.com</a></p>
+<p>ToolkitPalm es un complemento de QGIS que procesa ortoimágenes de plantaciones</p>
+<p>de palma de aceite. Este documento explica qué datos se recogen, para qué y</p>
+<p>durante cuánto tiempo.</p>
+<h2>Qué datos se recogen</h2>
+<p><strong>De tu cuenta de Google</strong>, cuando inicias sesión:</p>
+<ul>
+<li>El identificador de la cuenta, tu dirección de correo y tu nombre.</li>
+</ul>
+<p>Es todo. ToolkitPalm <strong>nunca ve tu contraseña</strong>: el inicio de sesión ocurre en</p>
+<p>las páginas de Google, y el complemento solo recibe un comprobante firmado por</p>
+<p>Google de que la sesión es válida.</p>
+<p><strong>De tu trabajo</strong>, cuando ejecutas un procesamiento:</p>
+<ul>
+<li>La porción de ortoimagen del lote que decides procesar y el polígono de ese</li>
+</ul>
+<p>  lote.</p>
+<ul>
+<li>El área en hectáreas, para calcular los créditos que corresponde descontar.</li>
+</ul>
+<h2>Para qué se usan</h2>
+<ul>
+<li><strong>Los datos de la cuenta:</strong> únicamente para asociar tu saldo de créditos a tu</li>
+</ul>
+<p>  cuenta y para poder darte soporte. No se usan para publicidad ni para elaborar</p>
+<p>  perfiles.</p>
+<ul>
+<li><strong>Las imágenes y polígonos:</strong> únicamente para generar el resultado que</li>
+</ul>
+<p>  solicitaste (las detecciones, la segmentación o la ubicación de acopios).</p>
+<p><strong>Tus imágenes no se usan para entrenar modelos</strong> ni para ningún otro fin.</p>
+<h2>Cuánto tiempo se conservan</h2>
+<ul>
+<li>**Las imágenes y archivos que envías a procesar se eliminan del servidor una</li>
+</ul>
+<p>  vez entregado el resultado.** No se archivan.</p>
+<ul>
+<li>Los datos de la cuenta y el historial de créditos se conservan mientras tengas</li>
+</ul>
+<p>  la cuenta activa, porque son los que sostienen tu saldo.</p>
+<h2>Con quién se comparten</h2>
+<p>Con nadie. Los datos no se venden, no se ceden ni se comparten con terceros.</p>
+<p>El procesamiento corre en Google Cloud Platform, que actúa únicamente como</p>
+<p>proveedor de infraestructura. Los pagos los procesa Wompi, que recibe los datos</p>
+<p>de la transacción pero no tiene acceso a tus imágenes ni a tu trabajo.</p>
+<p>ToolkitPalm nunca ve ni almacena datos de tarjetas.</p>
+<h2>Tus derechos</h2>
+<p>Puedes pedir en cualquier momento que se te informe qué datos hay asociados a tu</p>
+<p>cuenta, que se corrijan, o que se eliminen junto con la cuenta. Escribe a</p>
+<p><strong>ingarias9006@gmail.com</strong> y se atiende dentro de los 15 días hábiles.</p>
+<p>También puedes revocar el acceso de ToolkitPalm a tu cuenta de Google cuando</p>
+<p>quieras, desde <a href="https://myaccount.google.com/permissions">la página de permisos de tu cuenta</a>.</p>
+<h2>Cambios</h2>
+<p>Si esta política cambia, la fecha de arriba se actualiza y el cambio queda</p>
+<p>registrado en el historial público de este repositorio.</p>
+<footer>
+  <p>ToolkitPalm es un desarrollo propio e independiente de Ing. Adán Arias.<br>
+  <a href="/privacidad">Política de Privacidad</a> &nbsp;·&nbsp;
+  <a href="/terminos">Condiciones del Servicio</a> &nbsp;·&nbsp;
+  <a href="/">Inicio</a></p>
+</footer>
+</main>
+</body>
+</html>
